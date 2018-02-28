@@ -1,0 +1,7 @@
+“select 'UP' as statecode,'ALIGARH' as district, english_voter_sex,voter_age,sum(count::integer) as voter_count
+from age_gender_wise_votercount.age_data where english_district_name in('ALEEGA','ALEEGA :')
+group by english_voter_sex,voter_age;”
+
+“select sum(count::integer) as voter_count
+from age_gender_wise_votercount.age_data where english_district_name in('BANGLORE')
+and voter_age;”
