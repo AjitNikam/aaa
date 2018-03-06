@@ -1,0 +1,70 @@
+
+1....				
+				
+				
+Can you please pull this data in csv format (comma separated) for pincodes – 
+
+400067
+400092
+400091
+400095
+400064
+
+With following columns-
+ecino, nameenglish, age, gender, houseno, cityvillagenameenglish, postofficeenglish, policestationenglish, tehsilenglish, districtenglish, pollingboothnameenglish,  pincode, statename.
+
+
+Below is the sample query to export the data in a csv file-
+
+copy(SELECT ecino, nameenglish, age, gender, houseno,
+       cityvillagenameenglish, postofficeenglish, policestationenglish, tehsilenglish, districtenglish, pollingboothnameenglish,            
+       pincode, statename
+  FROM maharashtra.cards where pincode in (‘400095’, ‘400091’)) TO 
+                '/datastrategy/data/voterid_data_mumbai.csv' with csv header;
+
+				
+				
+				
+2....				
+				
+				Please pull the data for this as well with same criteria.
+I have mentioned the columns in the earlier email. Please use that format only.  Have the filename as “bobcards_voterdata.csv” and have the standard column name only shared with you.
+
+“ecino, nameenglish, age, gender, houseno, cityvillagenameenglish, postofficeenglish, policestationenglish, tehsilenglish, districtenglish, pollingboothnameenglish,  pincode, statename”
+
+
+
+ 
+
+
+Hi Abhishek,
+
+Count for mentioned cities within age range 21 and 65  are as follow :
+
+DISTRICT	City Name	Total Count	DB Source
+Banglore	BEGALURU EAST	3457789	voterid
+ 	BEGALURU SOUTH	 	 
+ 	BEGALURU NORTH	 	 
+ 	BEGALURU NAGAR	 	 
+ 	BEGALURU GRAMANTAR	 	 
+ 	Bangalore Rural	 	voterid_apr_latest
+ 	Belooru	 	voterid_apr_latest
+Delhi	CENTRAL	11838195	voterid_apr_latest
+ 	EAST	 	 
+ 	NEW DELHI	 	 
+ 	NORTH	 	 
+ 	NORTH EAST	 	 
+ 	NORTH WEST	 	 
+ 	SHAHDARA	 	 
+ 	SOUTH	 	 
+ 	SOUTH WEST	 	 
+ 	SOUTH-EAST	 	 
+ 	WEST	 	 
+Chandigarh	Chandigarh	515585	voterid_apr_latest
+Chennai	Perambur CHENNAI	183575	voterid_apr_latest
+ 	Thiruvallikeni CHENNAI	 	 
+ 	Nungambakkam CHENNAI	 	 
+ 	CHENNAI	 	 
+Jaipur	Jaipur	3382442	voterid_apr_latest
+
+
