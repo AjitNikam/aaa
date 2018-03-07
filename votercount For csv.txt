@@ -1,0 +1,9 @@
+banglore	voterid_apr	   665259
+			voterid			5090074
+			
+chennai		voterid_apr		2744619			
+Chandigarh	voterid_apr		566781
+Jaipur		voterid_apr		3881887
+delhi		voterid_apr		7569590
+							3735802
+							1730561
