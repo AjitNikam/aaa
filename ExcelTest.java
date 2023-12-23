@@ -1,4 +1,4 @@
-package com.transunion.adata.model;
+package com.tp.adata.model;
 
 public class ExcelTest {
 	
