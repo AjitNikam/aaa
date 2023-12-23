@@ -1,4 +1,4 @@
-package com.transunion.adata.core;
+package com.tp.adata.core;
 
 
 
